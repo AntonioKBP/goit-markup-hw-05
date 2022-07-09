@@ -5,6 +5,7 @@
   --white-color: #ffffff;
   --absolute-black: #000000;
   --icons-color-main: #afb1b8;
+  --cubik-timings: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -206,6 +207,7 @@ ul {
   border: 0 transparent;
   border-radius: 4px;
   padding: 10px 32px;
+  transition: background-color 250ms var(--cubik-timings);
 }
 .hero-btn:hover,
 .hero-btn:focus {
