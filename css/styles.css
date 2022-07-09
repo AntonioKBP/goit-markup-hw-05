@@ -96,6 +96,7 @@ ul {
   color: var(--text-color-black);
   padding-top: 34px;
   padding-bottom: 32px;
+  transition: color 250ms var(--cubik-timings);
 }
 
 .current::after {
@@ -360,6 +361,7 @@ ul {
   border-radius: 50%;
   text-decoration: none;
   color: var(--icons-color-main);
+  transition: background-color 250ms var(--cubik-timings), color 250ms var(--cubik-timings);
 }
 
 .team-social-item {
@@ -421,6 +423,7 @@ ul {
   border-radius: 4px;
   text-decoration: none;
   fill: var(--icons-color-main);
+  transition: border 250ms var(--cubik-timings), color 250ms var(--cubik-timings);
 }
 
 .clients-link:hover,
@@ -482,6 +485,14 @@ ul {
 .address-link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transition: color 250ms var(--cubik-timings);
+}
+.geo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
 }
 .address-link:hover,
 .address-link:focus {
@@ -518,6 +529,7 @@ ul {
   border-radius: 50%;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: color 2000ms var(--cubik-timings);
 }
 
 .footer-social-link:hover,
