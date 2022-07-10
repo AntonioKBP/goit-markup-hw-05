@@ -151,6 +151,7 @@ ul {
   color: var(--text-color-gray);
   padding-top: 15px;
   padding-bottom: 15px;
+  transition: color 250ms var(--cubik-timings);
 }
 
 .header-address:hover,
@@ -423,7 +424,7 @@ ul {
   border-radius: 4px;
   text-decoration: none;
   fill: var(--icons-color-main);
-  transition: border 250ms var(--cubik-timings), color 250ms var(--cubik-timings);
+  transition: border 250ms var(--cubik-timings), fill 250ms var(--cubik-timings);
 }
 
 .clients-link:hover,
@@ -529,7 +530,7 @@ ul {
   border-radius: 50%;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: color 2000ms var(--cubik-timings);
+  transition: background-color 250ms var(--cubik-timings);
 }
 
 .footer-social-link:hover,
@@ -583,7 +584,7 @@ ul {
   color: var(--text-color-black);
   border-radius: 4px;
   padding: 6px 22px;
-
+  transition: background-color 250ms var(--cubik-timings), color 250ms var(--cubik-timings);
   border: 0;
 }
 
