@@ -294,12 +294,17 @@ ul {
 
 .work-item {
   margin-right: 30px;
+  position: relative;
 }
 .work-item:last-child {
   margin-right: 0;
 }
 .work-img {
   display: block;
+}
+
+.work-text {
+  position: absolute;
 }
 
 /* Our Team Section */
