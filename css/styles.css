@@ -108,7 +108,7 @@ ul {
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
-  border-radius: 1px;
+  border-radius: 2px;
 }
 /* .current:after {
   /* position: absolute;
@@ -678,13 +678,13 @@ ul {
   padding: 24px;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--white-color);
-  transform: translateY(0);
+  transform: translateY(101%);
 
   transition: transform 250ms var(--cubik-timings);
 }
 
-.portfolio-overlay {
-  transform: translateY(100%);
+.portfolio-link:hover .portfolio-overlay {
+  transform: translateY(0);
 }
 
 .portfolio-title {
@@ -721,6 +721,9 @@ ul {
 }
 
 /* modal */
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
 
 .backdrop {
   position: fixed;
@@ -729,25 +732,36 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  transition: opacity 250ms var(--cubik-timings), visibility 250ms var(--cubik-timings);
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+
   width: 528px;
   min-height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms var(--cubik-timings);
 }
 
 .modal-close-button {
   position: absolute;
-  top: 17px;
-  right: 17px;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  margin: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  fill: var(--absolute-black);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .is-hidden {
